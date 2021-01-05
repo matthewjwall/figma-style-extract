@@ -1,0 +1,275 @@
+{
+    "style": {
+        "colors": {
+            "Panel Background Colour": {
+                "rgb": {
+                    "r": 0.29019609093666077,
+                    "g": 0.3019607961177826,
+                    "b": 0.30588236451148987
+                },
+                "hex": "#4a4d4e",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Default Text / Icon Colour": {
+                "rgb": {
+                    "r": 0.7843137383460999,
+                    "g": 0.7843137383460999,
+                    "b": 0.7843137383460999
+                },
+                "hex": "#c8c8c8",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button Bg Colour": {
+                "rgb": {
+                    "r": 0.3490196168422699,
+                    "g": 0.35686275362968445,
+                    "b": 0.35686275362968445
+                },
+                "hex": "#595b5b",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button Hover BG colour": {
+                "rgb": {
+                    "r": 0.3843137323856354,
+                    "g": 0.3921568691730499,
+                    "b": 0.3960784375667572
+                },
+                "hex": "#626465",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button Focus BG Colour": {
+                "rgb": {
+                    "r": 0.3843137323856354,
+                    "g": 0.3921568691730499,
+                    "b": 0.3960784375667572
+                },
+                "hex": "#626465",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button Active BG colour": {
+                "rgb": {
+                    "r": 0.24705882370471954,
+                    "g": 0.250980406999588,
+                    "b": 0.2549019753932953
+                },
+                "hex": "#3f4041",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button Disable BG Colour": {
+                "rgb": {
+                    "r": 0.24705882370471954,
+                    "g": 0.250980406999588,
+                    "b": 0.2549019753932953
+                },
+                "hex": "#3f4041",
+                "type": "SOLID",
+                "opacity": 0.30000001192092896
+            },
+            "Button Border Colour": {
+                "rgb": {
+                    "r": 0.20000000298023224,
+                    "g": 0.20392157137393951,
+                    "b": 0.20392157137393951
+                },
+                "hex": "#333434",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button Focus Border Colour": {
+                "rgb": {
+                    "r": 0,
+                    "g": 0.21176481246948242,
+                    "b": 1
+                },
+                "hex": "#0036ff",
+                "type": "SOLID",
+                "opacity": 0.6000000238418579
+            },
+            "Button CTA BG Colour": {
+                "rgb": {
+                    "r": 0.1568627506494522,
+                    "g": 0.5568627715110779,
+                    "b": 0.8745098114013672
+                },
+                "hex": "#288edf",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button CTA Border Colour": {
+                "rgb": {
+                    "r": 0.07450980693101883,
+                    "g": 0.30980393290519714,
+                    "b": 0.49803921580314636
+                },
+                "hex": "#134f7f",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "CTA Text Colour": {
+                "rgb": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                },
+                "hex": "#ffffff",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button CTA Hover BG Colour": {
+                "rgb": {
+                    "r": 0.2980392277240753,
+                    "g": 0.6313725709915161,
+                    "b": 0.8941176533699036
+                },
+                "hex": "#4ca1e4",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Button CTA Active Colour": {
+                "rgb": {
+                    "r": 0.11764705926179886,
+                    "g": 0.4901960790157318,
+                    "b": 0.7843137383460999
+                },
+                "hex": "#1e7dc8",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Toggle Group Button Active Text Colour": {
+                "rgb": {
+                    "r": 0.43529412150382996,
+                    "g": 0.7098039388656616,
+                    "b": 0.9450980424880981
+                },
+                "hex": "#6fb5f1",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Warning": {
+                "rgb": {
+                    "r": 0.9450980424880981,
+                    "g": 0.7607843279838562,
+                    "b": 0.10588235408067703
+                },
+                "hex": "#f1c21b",
+                "type": "SOLID",
+                "opacity": 1
+            },
+            "Danger": {
+                "rgb": {
+                    "r": 0.9215686321258545,
+                    "g": 0.34117648005485535,
+                    "b": 0.34117648005485535
+                },
+                "hex": "#eb5757",
+                "type": "SOLID",
+                "opacity": 1
+            }
+        },
+        "typography": {
+            "Standard Text": {
+                "fontFamily": "Source Sans Pro",
+                "fontWeight": "Regular",
+                "fontSize": 12,
+                "type": "TEXT",
+                "letterSpacing": {
+                    "unit": "PIXELS",
+                    "value": 0
+                },
+                "lineHeight": {
+                    "unit": "AUTO"
+                }
+            },
+            "Text h4": {
+                "fontFamily": "Source Sans Pro",
+                "fontWeight": "Regular",
+                "fontSize": 14,
+                "type": "TEXT",
+                "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                },
+                "lineHeight": {
+                    "unit": "AUTO"
+                }
+            },
+            "Text h3": {
+                "fontFamily": "Source Sans Pro",
+                "fontWeight": "Regular",
+                "fontSize": 18,
+                "type": "TEXT",
+                "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                },
+                "lineHeight": {
+                    "unit": "AUTO"
+                }
+            },
+            "Text h2": {
+                "fontFamily": "Source Sans Pro",
+                "fontWeight": "Regular",
+                "fontSize": 24,
+                "type": "TEXT",
+                "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                },
+                "lineHeight": {
+                    "unit": "AUTO"
+                }
+            },
+            "Text H1": {
+                "fontFamily": "Source Sans Pro",
+                "fontWeight": "Regular",
+                "fontSize": 32,
+                "type": "TEXT",
+                "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                },
+                "lineHeight": {
+                    "unit": "AUTO"
+                }
+            }
+        },
+        "spacing": {
+            "S": {
+                "width": "18px",
+                "height": "17.999977111816406px",
+                "type": "spacing",
+                "value": "18px"
+            },
+            "L": {
+                "width": "40px",
+                "height": "39.999977111816406px",
+                "type": "spacing",
+                "value": "40px"
+            },
+            "M": {
+                "width": "26px",
+                "height": "25.999977111816406px",
+                "type": "spacing",
+                "value": "26px"
+            },
+            "XL": {
+                "width": "60px",
+                "height": "59.999977111816406px",
+                "type": "spacing",
+                "value": "60px"
+            },
+            "XS": {
+                "width": "12px",
+                "height": "11.999978065490723px",
+                "type": "spacing",
+                "value": "12px"
+            }
+        }
+    }
+}

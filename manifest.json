@@ -1,0 +1,7 @@
+{
+  "name": "Figma Style Extractor",
+  "id": "849725220407613995",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html"
+}

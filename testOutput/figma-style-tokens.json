@@ -1,0 +1,158 @@
+{
+    "style": {
+        "color": {
+            "PanelBackground Colour": {
+                "type": "SOLID",
+                "value": "#4a4d4e"
+            },
+            "DefaultText ": {
+                "type": "SOLID",
+                "value": "#c8c8c8"
+            },
+            "ButtonBg Colour": {
+                "type": "SOLID",
+                "value": "#595b5b"
+            },
+            "ButtonHover BG colour": {
+                "type": "SOLID",
+                "value": "#626465"
+            },
+            "ButtonFocus BG Colour": {
+                "type": "SOLID",
+                "value": "#626465"
+            },
+            "ButtonActive BG colour": {
+                "type": "SOLID",
+                "value": "#3f4041"
+            },
+            "ButtonDisable BG Colour": {
+                "type": "SOLID",
+                "value": "#3f4041"
+            },
+            "ButtonBorder Colour": {
+                "type": "SOLID",
+                "value": "#333434"
+            },
+            "ButtonFocus Border Colour": {
+                "type": "SOLID",
+                "value": "#0036ff"
+            },
+            "ButtonCTA BG Colour": {
+                "type": "SOLID",
+                "value": "#288edf"
+            },
+            "ButtonCTA Border Colour": {
+                "type": "SOLID",
+                "value": "#134f7f"
+            },
+            "CTAText Colour": {
+                "type": "SOLID",
+                "value": "#ffffff"
+            },
+            "ButtonCTA Hover BG Colour": {
+                "type": "SOLID",
+                "value": "#4ca1e4"
+            },
+            "ButtonCTA Active Colour": {
+                "type": "SOLID",
+                "value": "#1e7dc8"
+            },
+            "ToggleGroup Button Active Text Colour": {
+                "type": "SOLID",
+                "value": "#6fb5f1"
+            }
+        },
+        "typography": {
+            "StandardText": {
+                "fontName": {
+                    "value": "Source Sans Pro"
+                },
+                "size": {
+                    "value": 12
+                },
+                "transform": {
+                    "value": "none"
+                },
+                "decoration": {
+                    "value": "none"
+                },
+                "letterSpacing": {
+                    "value": 0,
+                    "unit": "PIXELS"
+                }
+            },
+            "Texth4": {
+                "fontName": {
+                    "value": "Source Sans Pro"
+                },
+                "size": {
+                    "value": 14
+                },
+                "transform": {
+                    "value": "none"
+                },
+                "decoration": {
+                    "value": "none"
+                },
+                "letterSpacing": {
+                    "value": 0,
+                    "unit": "PERCENT"
+                }
+            },
+            "Texth3": {
+                "fontName": {
+                    "value": "Source Sans Pro"
+                },
+                "size": {
+                    "value": 18
+                },
+                "transform": {
+                    "value": "none"
+                },
+                "decoration": {
+                    "value": "none"
+                },
+                "letterSpacing": {
+                    "value": 0,
+                    "unit": "PERCENT"
+                }
+            },
+            "Texth2": {
+                "fontName": {
+                    "value": "Source Sans Pro"
+                },
+                "size": {
+                    "value": 24
+                },
+                "transform": {
+                    "value": "none"
+                },
+                "decoration": {
+                    "value": "none"
+                },
+                "letterSpacing": {
+                    "value": 0,
+                    "unit": "PERCENT"
+                }
+            },
+            "TextH1": {
+                "fontName": {
+                    "value": "Source Sans Pro"
+                },
+                "size": {
+                    "value": 32
+                },
+                "transform": {
+                    "value": "none"
+                },
+                "decoration": {
+                    "value": "none"
+                },
+                "letterSpacing": {
+                    "value": 0,
+                    "unit": "PERCENT"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+
+<div style="margin: 25px;">
+    <div style="display: table;">
+        <span class="iconify" data-icon="logos:figma" style="width: 82px; height: 127px; display: table-cell;"></span>
+        <span style="height:127px;  display: table-cell; vertical-align: middle; font-size: 16px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; color: #525252;"> 
+           Extract the saved local styles of your Figma file.<br/><br/>
+           The  Local styles output format can be a styles page created in this figma document <br/> or they can be extracted into design tokens and packaged into a JSON file to save.
+        </span>
+    </div>
+
+
+<!-- 
+  <button id="download" 
+        style=" height: 44px; width: 250px; border-radius: 14px; background-color: #1ABCFE; color: #f1f1f1; font-size: 14px; "
+  >Generate JSON</button>
+
+
+  <button id="createFromFigma" 
+         style="height: 44px; width: 250px; border-radius: 14px;  background-color: #1ABCFE; color: #f1f1f1; font-size: 14px;"
+  >Generate Style Guide</button> -->
+
+  <div style="display: flex; align-items: space-around; justify-content: center;">
+    <div style=" font-family: Arial, Helvetica, sans-serif;  margin-top: 50px; flex-direction: row;">
+        <div style="display: inline-block; margin-right: 15px;">
+            <button id="download" 
+            style="height: 125px; width: 125px; border-radius: 100px; background-color: #1ABCFE; color: #f1f1f1;"
+            >
+                <span class="iconify" data-icon="carbon:json" style="width:50%; height: 50%"></span>
+            </button>
+            <p style="display: block; font-size: 10px;  text-align: center; color: #525252;">Generate JSON</p>
+        </div>
+
+        <div style="display: inline-block; margin-left: 15px;">
+            <button id="createFromFigma" 
+            style="height: 125px; width: 125px; border-radius: 100px;  background-color: #1ABCFE; color: #f1f1f1; font-size: 14px;"
+            >
+                <span class="iconify" data-icon="carbon:notebook" style="width:50%; height: 50%;"></span>
+            </button>
+            <p style="display: block; font-size: 10px;  text-align: center; color: #525252;" >Generate Styles Page</p>
+        </div>
+    </div>
+</div>
+
+
+  <!-- <div style='width: 45%; float: right;'>
+    <span id="sampleJSON" style="font-size: 10;"> <b>JSON TEMPLATE:</b> 
+
+    </span>
+  </div>
+  <div style='width: 45%; float: right; margin-right: 10%;'>
+    <textarea type="text" id="jsonData" style="width: 100%; height: 70%; margin-bottom: 10px;" placeholder="Paste JSON Here: "></textarea>
+  </div> -->
+
+  <!-- <button id="createFromJSON" style="width: 100%;  height: 4%; background-color: #4CA1E4; margin-top: 10px; color: #f1f1f1; font-size: medium;" > Generate from JSON data</button> -->
+  <!-- <button id="cancel">Cancel</button> -->
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+<script>
+
+// var jsonVar = {
+//         "style": {
+//             "color": {
+//                 "Colour Token Name": {
+//                     "type": "SOLID",
+//                     "value": "#4ACAB3"
+//                 },
+//             },
+//             "typography": {
+//                 "Text Token Name": {
+//                     "fontName": {
+//                         "value": "Arial"
+//                     },
+//                     "size": {
+//                         "value": 12
+//                     },
+//                     "transform": {
+//                         "value": "none"
+//                     },
+//                     "decoration": {
+//                         "value": "none"
+//                     },
+//                     "letterSpacing": {
+//                         "value": 0,
+//                         "unit": "PIXELS"
+//                     }
+//                 },
+//             }
+//         }
+//     },
+//     jsonStr = JSON.stringify(jsonVar),
+//     regeStr = '', // A EMPTY STRING TO EVENTUALLY HOLD THE FORMATTED STRINGIFIED OBJECT
+//     f = {
+//             brace: 0
+//         }; // AN OBJECT FOR TRACKING INCREMENTS/DECREMENTS,
+//            // IN PARTICULAR CURLY BRACES (OTHER PROPERTIES COULD BE ADDED)
+
+//     regeStr = jsonStr.replace(/({|}[,]*|[^{}:]+:[^{}:,]*[,{]*)/g, function (m, p1) {
+//     var rtnFn = function() {
+//         return '<div style="text-indent: ' + (f['brace'] * 20) + 'px;">' + p1 + '</div>';
+//     },
+//     rtnStr = 0;
+//     if (p1.lastIndexOf('{') === (p1.length - 1)) {
+//         rtnStr = rtnFn();
+//         f['brace'] += 1;
+//     } else if (p1.indexOf('}') === 0) {
+//          f['brace'] -= 1;
+//         rtnStr = rtnFn();
+//     } else {
+//         rtnStr = rtnFn();
+//     }
+//     return rtnStr;
+// });
+// document.getElementById('sampleJSON').innerHTML += regeStr;
+
+document.getElementById('createFromFigma').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'generate-figma-style-guide'} }, '*')
+}
+
+// document.getElementById('createFromJSON').onclick = function() {
+//     const txtData = document.getElementById('jsonData');
+//     if(IsJsonString(txtData.value) === true){
+//       parent.postMessage({ pluginMessage: { type: 'generate-json-style-guide',  data: txtData.value} }, '*')
+//     }else{
+//       alert("JSON IS INVALID")
+//     }
+// };
+
+// document.getElementById('cancel').onclick = () => {
+//   parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+// }
+
+document.getElementById('download').onclick = () => {
+    parent.postMessage({ pluginMessage: { type: 'download' } }, '*')
+}
+
+onmessage = (event) => {
+  //console.log("got this from the plugin code", event.data.pluginMessage)
+  const msg = event.data.pluginMessage;
+      download(
+        JSON.stringify(msg, null, 4),
+        "styles.json",
+        "application/json"
+    );
+}
+
+function download(content, fileName, contentType) {
+    var a = document.createElement("a");
+    var file = new Blob([content], { type: contentType });
+    a.href = URL.createObjectURL(file);
+    a.download = fileName;
+    a.click();
+}
+
+function IsJsonString(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
+
+// var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(jsonVar));
+
+</script>
